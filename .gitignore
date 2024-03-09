@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        h1 {
+            font-size: 30px;
+            background-color: #f0d510;
+            color: #ffffff;
+            padding: 8px 14px;
+        }
+        .避けるh1{
+            transition: 2s all;
+            display: block;
+            position:  relative; 
+            z-index: 10;
+        }
+        .避けるh1:hover {
+            transform: translateX(200px);
+        }
+        .拡大 {
+            transition: 0.3s all;
+            display: inline-block;
+            position:  relative; 
+            z-index: 10;
+        }
+        .拡大:hover {
+            transform: scale(20,1);
+        }
+        .拡大2 {
+            transition: 2s all;
+            display: inline-block;
+            position:  relative; 
+            z-index: 10;
+        }
+        .拡大2:hover {
+            transform: scale(7);
+        }
+        .避ける {
+            transition: 2s all;
+            display: block;
+            color: #551a8b;
+            text-decoration: underline;
+            position:  relative; 
+            z-index: 10;
+        }
+        .避ける:hover {
+            transform: scale(2);
+        }
+        .もとからでかい{
+            transform: scale(7);
+            display: inline-block;
+            position:  relative; 
+            z-index: 1;
+        }
+        .震える{
+            display: inline-block;
+            animation: hurueru .1s  infinite;
+        }
+        .震える2:hover{
+            display: inline-block;
+            animation: hurueru .1s  infinite;
+        }
+        @keyframes hurueru {
+        0% {transform: translate(0px, 0px) rotateZ(0deg)}
+        25% {transform: translate(2px, 2px) rotateZ(1deg)}
+        50% {transform: translate(0px, 2px) rotateZ(0deg)}
+        75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+        100% {transform: translate(0px, 0px) rotateZ(0deg)}
+        } 
+        html,body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+        <marquee width="450" height="50" scrollamount="8" scrolldelay="80" direction="up" behavior="alternate" class='震える2'>このページでは普通の文字は存在しません。</marquee><br>
+    <h1 class='避けるh1'>ここから始める</h1>
+    <p class='拡大 震える2'>よく使うリンク</p><br>
+    <a class='拡大' href="https://scratch.mit.edu/messages/">Scratch</a><br><a class='拡大' href="https://chat.openai.com/">ChatGPT</a><br>
+    <h1 class='避けるh1'>ウランとは</h1>
+    <p class='拡大2'>地球上で</p><p class='拡大2'>最も</p><p class='拡大2'>質量が</p><p class='拡大2'>大きい</p><p class='拡大2'>元素は</p><p class='拡大2'>ウランです。</p><p class='拡大2'>ウランは</p><p class='拡大2'>周期表の</p><p class='拡大2'>中で</p><p class='拡大2'>92番目に</p><p class='拡大2'>位置し、</p><p class='拡大2'>原子番号は</p><p class='拡大2'>92です。</p><p class='拡大2'>ウランは</p><p class='拡大2'>放射線を</p><p class='拡大2'>放出する</p><p class='拡大2'>放射性元素であり、</p><p class='拡大2'>自然界に</p><p class='拡大2'>おいては</p><p class='拡大2'>ウラン鉱石として</p><p class='拡大2'>鉱床に</p><p class='拡大2'>存在しています。</p><p class='拡大2'>ウランは</p><p class='拡大2'>原子力発電や</p><p class='拡大2'>核兵器の</p><p class='拡大2'>製造に</p><p class='拡大2'>利用される</p><p class='拡大2'>ことがあり、</p><p class='拡大2'>その</p><p class='拡大2'>特異な</p><p class='拡大2'>物性から</p><p class='拡大2'>重要な</p><p class='拡大2'>役割を</p><p class='拡大2'>果たしています。</p><Marquee scrollamount="20" truespeed class='もとからでかい' >
+ウランです。</Marquee>
+    <h1 class='避けるh1'>動く画像（ホバーしてみると...？）</h1>
+    <marquee scrollamount="50" truespeed class='拡大'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kazakhstan_%28orthographic_projection%29.svg/250px-Kazakhstan_%28orthographic_projection%29.svg.png"></marquee>
+    <p class='拡大'>カザフスタンは</p><p class='拡大'>ウランの</p><p class='拡大'>産出量が</p><p class='拡大'>世界一です。</p><Marquee scrollamount="20" truespeed class='もとからでかい' >
+カザフスタン</Marquee>
+    <h1 class='避けるh1'>新しい項目</h1>
+    <Marquee behavior="alternate" scrollamount="100" truespeed class='拡大2'>
+こんにちは</Marquee><Marquee behavior="alternate" scrollamount="99" truespeed class='拡大2'>
+こんにちは</Marquee><Marquee behavior="alternate" scrollamount="10" truespeed class='震える'>
+こんにちは</Marquee>
+    <p class='拡大'>↓は</p><p class='拡大'>GimKitの</p><p class='拡大'>リンクだよ</p><p class='拡大'>！</p><p class='拡大'>クリックしてみよう</p><p class='拡大'>！</p>
+<p class='避ける'>GimKit</p>
+    <h1 class='避けるh1'>参考になる他のページ</h1>
+    <p class ='拡大'>ヘルプページ</p><br>
+</body>
+</html>
